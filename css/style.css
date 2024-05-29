@@ -1,0 +1,371 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+
+}
+#home {
+  padding: 20px 0;
+  background-color: #e63946;
+  width: 100%;
+  height: 50vh;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#contactus{
+  padding: 20px 0;
+  
+  width: 100%;
+  height: 70vh;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#contactimg{
+  width: 75%;
+  height: 350px;
+ 
+  
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #f1faee;
+  font-size: 4rem;
+}
+
+.roller {
+  height: 4.125rem;
+  line-height: 4rem;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #1d3557;
+}
+
+#spare-time {
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 1rem;
+  margin-top: 0;
+  color: #a8dadc;
+}
+
+.roller #rolltext {
+  position: absolute;
+  top: 0;
+  animation: slide 5s infinite;
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -4rem;
+  }
+  50% {
+    top: -8rem;
+  }
+  72.5% {
+    top: -12.25rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+    color: #f1faee;
+    font-size: 2.125rem;
+  }
+
+  .roller {
+    height: 2.6rem;
+    line-height: 2.125rem;
+  }
+
+  #spare-time {
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+  }
+
+  .roller #rolltext {
+    animation: slide-mob 5s infinite;
+  }
+
+  @keyframes slide-mob {
+    0% {
+      top: 0;
+    }
+    25% {
+      top: -2.125rem;
+    }
+    50% {
+      top: -4.25rem;
+    }
+    72.5% {
+      top: -6.375rem;
+    }
+  }
+
+  #contactus{
+margin-top: 105px;
+margin-bottom: 70px;
+padding: 12px;
+  }
+  #contactimg{
+   display: none;
+    
+  }
+}
+#headimg
+{
+width: 30%;
+}
+#headertext {
+  color: white;
+}
+.service-card {
+  margin-bottom: 20px;
+}
+.navbar-custom {
+  background-color: #2c3e50;
+}
+.navbar-nav .nav-link {
+  color: white !important;
+
+  /* font-size: 1.2em; */
+  transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+  color: #2ecc71 !important;
+}
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.social-icons li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.social-icons li:first-child {
+  margin-left: 0;
+}
+.social-icons li a {
+  color: white;
+  font-size: 30px;
+}
+
+#fb:hover{
+  color: blue;
+}
+#insta:hover{
+  color:maroon;
+}
+#appw:hover{
+  color: green;
+}
+/* styles.css */
+#goToTopBtn {
+  
+  font-size: 18px; /* Increase font size */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: black; /* Black background color */
+  color: white; /* White text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed position */
+  bottom: 20px; /* Position it 20px from the bottom */
+  right: 20px; /* Position it 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  font-weight: 500;
+}
+
+#goToTopBtn:hover {
+  background-color:tomato ; /* Add a dark-grey background on hover */
+}
+/* login Student */
+#loginstu{
+  width: 100%;
+  height: 60vh;
+  margin-top: 30px;
+  margin-bottom: 5px;
+
+}
+.box{
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.form-title{
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #1d3557;
+}
+.form-group_rs{
+  height: 48px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.form-control_rs{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:none;
+  border:1px solid  #a1a1a1;
+  outline:none;
+  padding: 16px;
+  border-radius: 3px;
+  z-index: 1;
+}
+
+.formrs{
+  width: 400px;
+  min-height: 400px;
+  padding: 32px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.formrs img{
+  display: block;
+  margin:auto;
+}
+.form-label{
+  position: absolute;
+  left: 13px;
+  top: 13px;
+  color: #a1a1a1;
+  background-color: white;
+  padding: 0 6px;
+  font-size: 14px;
+  transition:.3s;
+}
+.form-control_rs:focus+ .form-label{
+  top: -10px;
+  z-index: 10;
+  color: #1B66C9;
+  font-weight: 500;
+}
+.form-control_rs:focus{
+  border: 1px solid #1B66C9;
+}
+
+.form-control_rs:not(:focus):valid+label{
+  top: -10px;
+  z-index: 10;
+}
+.showLabel{
+  font-size: 14px;
+}
+.bottom-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+.bottom-box a{
+  color:#1B66C9;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight:500;
+}
+.form-button{
+  display: block;
+  padding: 12px 32px;
+  border: none;
+  background-color: #1B66C9;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+.form-button:hover{
+  box-shadow:0 10px 36px rgba(0,0,0,.15);
+}
+/* end login */
+/* Start Register */
+#stu_register{
+  width: 100%;
+  height: 75vh;
+  margin-top: 60px;
+  
+}
+
+.form-button_regstu{
+  display: block;
+  padding: 12px 32px;
+  border: none;
+  background-color: #2ecc71;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+.form-button_regstu:hover{
+  box-shadow:0 10px 36px rgba(0,0,0,.15);
+}
+/* end register */
+.form_button_admin{
+  display: block;
+  padding: 12px 32px;
+  border: none;
+  background-color: #e74c3c;
+  color: #fff;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: .3s;
+}
+.form_button_admin:hover{
+  box-shadow:0 10px 36px rgba(0,0,0,.15);
+}
+
+.loginstu{
+  width: 100%;
+  height: 45vh;
+  margin-top: 60px;
+  margin-bottom: 5px;
+}
+.boxlogad{
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+.form-buttons{
+  display: block;
+  padding: 12px 32px;
+  border: none;
+  background-color: #c0392b;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .3s;
+}
